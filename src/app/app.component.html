@@ -1,1 +1,19 @@
-<h1>Aula</h1><p> Aula introdutória a respeito do Angular</p>
+<h1>Aula</h1>
+<p> Aula introdutória a respeito do Angular</p>
+<p> Boa noite, {{ nome }} </p>
+
+<form>
+  <input type="text" name="valor" value="" [(ngModel)]="valor" >
+  <button type="button" name="button" (click)="clique()"> Clicar </button>
+</form>
+
+<br><br><br>
+
+<form>
+  <input id= "n1" type="text" name="n1" value="" [(ngModel)]="n1" >
+  <p>&nbsp; + &nbsp;</p>
+  <input id="n2" type="text" name="n2" value="" [(ngModel)]="n2" >
+  document.getElementById("n1");
+  <button type="button" name="button" (click)="calcular()"> Calcular </button>
+  <p>Resultado: &nbsp;</p> <p>{{ calcular(n1 , n2) }}</p>
+</form>
