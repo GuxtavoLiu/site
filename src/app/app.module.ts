@@ -11,6 +11,7 @@ import { Erro404Component } from './erro404/erro404.component';
 import { SomaComponent } from './soma/soma.component';
 import { FormsModule } from '@angular/forms';
 import { VetoresComponent } from './vetores/vetores.component';
+import { ServicoEstado } from './servico/servico.estado'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { VetoresComponent } from './vetores/vetores.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServicoEstado],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
